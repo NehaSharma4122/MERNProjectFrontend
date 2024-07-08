@@ -24,7 +24,7 @@ const Signup = () => {
         alert("All fields are required");
       }else {
     
-          const response = await axios.post("http://localhost:1000/api/v1/sign-in", 
+          const response = await axios.post("https://task-manager-backend-virid.vercel.app/api/v1/sign-in", 
         data
       );
       setdata({username: "", email: "", password: "" })

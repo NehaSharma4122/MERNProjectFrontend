@@ -23,7 +23,7 @@ const InputData = ({ InputDiv, setInputDiv, UpdatedData, setUpdatedData}) => {
     if (Data.title===""||Data.desc === ""){
       alert("All fields are required ")
     }else{
-      await axios.post(`http://localhost:1000/api/v2/create-task`,Data,{headers});
+      await axios.post(`https://task-manager-backend-virid.vercel.app/api/v2/create-task`,Data,{headers});
       setData({title:"",desc:""})
       setInputDiv("hidden")
     }
@@ -33,7 +33,7 @@ const InputData = ({ InputDiv, setInputDiv, UpdatedData, setUpdatedData}) => {
     if (Data.title===""||Data.desc === ""){
       alert("All fields are required ")
     }else{
-      await axios.put(`http://localhost:1000/api/v2/update-task/${UpdatedData.id}`,
+      await axios.put(`https://task-manager-backend-virid.vercel.app/api/v2/update-task/${UpdatedData.id}`,
         Data,
         {
           headers

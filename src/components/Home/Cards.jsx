@@ -17,7 +17,7 @@ const handleCompleteTask = async (id) =>{
   try{
     await axios.put
     (
-      `http://localhost:1000/api/v2/update-complete-task/${id}`,
+      `https://task-manager-backend-virid.vercel.app/api/v2/update-complete-task/${id}`,
       {},
       { headers }
     );
@@ -31,7 +31,7 @@ const handleImportant = async (id) =>{
   try{
     await axios.put
     (
-      `http://localhost:1000/api/v2/update-imp-task/${id}`,
+      `https://task-manager-backend-virid.vercel.app/api/v2/update-imp-task/${id}`,
       {},
       { headers }
     );
@@ -51,7 +51,7 @@ const deletetask = async (id) =>{
   try{
     await axios.delete
     (
-      `http://localhost:1000/api/v2/delete-task/${id}`,
+      `https://task-manager-backend-virid.vercel.app/api/v2/delete-task/${id}`,
       { headers }
     );
     
